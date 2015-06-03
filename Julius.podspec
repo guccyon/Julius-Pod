@@ -1,15 +1,6 @@
-#
-# Be sure to run `pod lib lint Julius.podspec' to ensure this is a
-# valid spec and remove all comments before submitting the spec.
-#
-# Any lines starting with a # are optional, but encouraged
-#
-# To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
-#
-
 Pod::Spec.new do |s|
   s.name             = "Julius"
-  s.version          = "0.1.0"
+  s.version          = "4.3.1"
   s.summary          = "A short description of Julius."
   s.description      = <<-DESC
                        An optional longer description of Julius
@@ -17,22 +8,51 @@ Pod::Spec.new do |s|
                        * Markdown format.
                        * Don't worry about the indent, we strip it!
                        DESC
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/Julius"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+  s.homepage         = "https://github.com/guccyon/Julius-Pod"
   s.license          = 'MIT'
-  s.author           = { "Tetsuro Higuchi" => "higuchi.tetsuro@gmail.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/Julius.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { "Tetsuro Higuchi" => "higuchi.tetsuro[at]gmail.com" }
+  s.source           = { :git => "https://github.com/guccyon/Julius-Pod.git", :tag => s.version.to_s }
 
-  s.platform     = :ios, '7.0'
-  s.requires_arc = true
+  s.platform         = :ios, '7.0'
+  s.requires_arc     = true
 
-  s.source_files = 'Pod/Classes/**/*'
+
+  s.source_files = 'Pod/Classes/**/*.{h,m}',
+                   'Pod/include/**/*.{h,c}'
+
+  s.subspec 'libsent' do |sub|
+    source_root = "julius-#{s.version}/libsent"
+
+    exclude_adin_files = %w[
+      esd mic_darwin_coreaudio mic_freebsd mic_linux mic_linux_alsa
+      mic_linux_oss mic_o2 mic_sol2 mic_sp mic_sun4 na
+      portaudio pulseaudio netaudio
+    ].map{|e| "#{source_root}/src/adin/adin_#{e}.c" }
+    exclude_adin_files << "#{source_root}/src/adin/pa"
+
+    sub.source_files  = "#{source_root}/{src,include}/**/*.{h,c}"
+    sub.exclude_files = exclude_adin_files
+    sub.header_mappings_dir = "#{source_root}/include"
+    sub.libraries     = 'z'
+  end
+
+  s.subspec 'libjulius' do |sub|
+    source_root = "julius-#{s.version}/libjulius"
+
+    sub.source_files = "#{source_root}/{src,include}/**/*.{h,c}"
+    sub.header_mappings_dir  = "#{source_root}/include"
+  end
+
+  s.header_mappings_dir  = 'Pod/include'
   s.resource_bundles = {
-    'Julius' => ['Pod/Assets/*.png']
+    'Julius' => [
+      'Pod/Assets/*.png',
+      'Pod/Assets/models/lang_m/*',
+      'Pod/Assets/models/phone_m/*',
+      'Pod/Assets/*.jconf'
+    ]
   }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.xcconfig = {
+    'USER_HEADER_SEARCH_PATHS' => '"$(PODS_ROOT)/Headers/Private/Julius"'
+  }
 end
