@@ -26,7 +26,7 @@ SPEC CHECKSUMS:
   Expecta: 78b4e8b0c8291fa4524d7f74016b6065c2e391ec
   Expecta+Snapshots: 40c5ec43b43da3bae957f14fed5dc9177d08ec8b
   FBSnapshotTestCase: 9d5fe43b29ae3a0ed8fc829477971b281038f748
-  Julius: cebab78a50753f564220821cfb5adb39a65be944
+  Julius: a73ca6dabe3fc5b9f3b5a5040322c2e926c5af93
   Specta: 097be314a75de103703a3bf9a529dc1a398509d7
 
 COCOAPODS: 0.37.2

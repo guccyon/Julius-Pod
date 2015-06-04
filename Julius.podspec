@@ -18,7 +18,8 @@ Pod::Spec.new do |s|
 
 
   s.source_files = 'Pod/Classes/**/*.{h,m}',
-                   'Pod/include/**/*.{h,c}'
+                   'Pod/include/**/*.{h,c}',
+                   'Pod/Headers/**/*.{h,m}'
 
   s.subspec 'libsent' do |sub|
     source_root = "julius-#{s.version}/libsent"
@@ -43,6 +44,7 @@ Pod::Spec.new do |s|
     sub.header_mappings_dir  = "#{source_root}/include"
   end
 
+  # s.private_header_files = 'Pod/Classes/**/*.h'
   s.header_mappings_dir  = 'Pod/include'
   s.resource_bundles = {
     'Julius' => [

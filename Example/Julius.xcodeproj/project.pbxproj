@@ -22,6 +22,20 @@
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
+		971438601B21A046008FF40C /* JLSDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9714385F1B21A046008FF40C /* JLSDetailViewController.m */; };
+		97775F7E1B208BA5007D4C99 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97775F7D1B208BA5007D4C99 /* AVFoundation.framework */; };
+		97775F811B208E38007D4C99 /* Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 97775F801B208E38007D4C99 /* Helper.m */; };
+		978627F41B20757000846438 /* SpecHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 978627F31B20757000846438 /* SpecHelper.m */; };
+		978627F71B2077AD00846438 /* JLSRecogResultSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 978627F61B2077AD00846438 /* JLSRecogResultSpec.m */; };
+		978627FA1B207C3400846438 /* JLSRecogSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 978627F91B207C3400846438 /* JLSRecogSpec.m */; };
+		978628051B20858D00846438 /* fast.jconf in Resources */ = {isa = PBXBuildFile; fileRef = 978627FB1B20858D00846438 /* fast.jconf */; };
+		978628061B20858D00846438 /* light.jconf in Resources */ = {isa = PBXBuildFile; fileRef = 978627FC1B20858D00846438 /* light.jconf */; };
+		978628071B20858D00846438 /* web.60k.8-8.bingramv4.gz in Resources */ = {isa = PBXBuildFile; fileRef = 978627FF1B20858D00846438 /* web.60k.8-8.bingramv4.gz */; };
+		978628081B20858D00846438 /* web.60k.htkdic in Resources */ = {isa = PBXBuildFile; fileRef = 978628001B20858D00846438 /* web.60k.htkdic */; };
+		978628091B20858D00846438 /* hmmdefs_monof_mix16_gid.binhmm in Resources */ = {isa = PBXBuildFile; fileRef = 978628021B20858D00846438 /* hmmdefs_monof_mix16_gid.binhmm */; };
+		9786280A1B20858D00846438 /* hmmdefs_ptm_gid.binhmm in Resources */ = {isa = PBXBuildFile; fileRef = 978628031B20858D00846438 /* hmmdefs_ptm_gid.binhmm */; };
+		9786280B1B20858D00846438 /* logicalTri in Resources */ = {isa = PBXBuildFile; fileRef = 978628041B20858D00846438 /* logicalTri */; };
+		97D683AD1B2073DB0043B5CD /* JLSConfSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 97D683AC1B2073DB0043B5CD /* JLSConfSpec.m */; };
 		CC0AAE8EAFE64037458E0DAF /* Pods_Julius_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1857B113B08FF60362113233 /* Pods_Julius_Example.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		E7B5207E92142F47D9DCA388 /* Pods_Julius_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE6766035E0ABB1BF9FBE305 /* Pods_Julius_Tests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
@@ -66,6 +80,23 @@
 		689B248E4D18E493A0941378 /* Pods-Julius_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Julius_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Julius_Tests/Pods-Julius_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		6A4D82D04B179E2F14BC316A /* Pods-Julius_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Julius_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Julius_Tests/Pods-Julius_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		747E92F4DE09185D85EA8BA5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		9714385E1B21A046008FF40C /* JLSDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLSDetailViewController.h; sourceTree = "<group>"; };
+		9714385F1B21A046008FF40C /* JLSDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLSDetailViewController.m; sourceTree = "<group>"; };
+		97775F7D1B208BA5007D4C99 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		97775F7F1B208E38007D4C99 /* Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Helper.h; sourceTree = "<group>"; };
+		97775F801B208E38007D4C99 /* Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Helper.m; sourceTree = "<group>"; };
+		978627F31B20757000846438 /* SpecHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpecHelper.m; sourceTree = "<group>"; };
+		978627F51B20759600846438 /* SpecHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpecHelper.h; sourceTree = "<group>"; };
+		978627F61B2077AD00846438 /* JLSRecogResultSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLSRecogResultSpec.m; sourceTree = "<group>"; };
+		978627F91B207C3400846438 /* JLSRecogSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLSRecogSpec.m; sourceTree = "<group>"; };
+		978627FB1B20858D00846438 /* fast.jconf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = fast.jconf; path = ../../Pod/Assets/fast.jconf; sourceTree = "<group>"; };
+		978627FC1B20858D00846438 /* light.jconf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = light.jconf; path = ../../Pod/Assets/light.jconf; sourceTree = "<group>"; };
+		978627FF1B20858D00846438 /* web.60k.8-8.bingramv4.gz */ = {isa = PBXFileReference; lastKnownFileType = archive.gzip; path = "web.60k.8-8.bingramv4.gz"; sourceTree = "<group>"; };
+		978628001B20858D00846438 /* web.60k.htkdic */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = web.60k.htkdic; sourceTree = "<group>"; };
+		978628021B20858D00846438 /* hmmdefs_monof_mix16_gid.binhmm */ = {isa = PBXFileReference; lastKnownFileType = file; path = hmmdefs_monof_mix16_gid.binhmm; sourceTree = "<group>"; };
+		978628031B20858D00846438 /* hmmdefs_ptm_gid.binhmm */ = {isa = PBXFileReference; lastKnownFileType = file; path = hmmdefs_ptm_gid.binhmm; sourceTree = "<group>"; };
+		978628041B20858D00846438 /* logicalTri */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = logicalTri; sourceTree = "<group>"; };
+		97D683AC1B2073DB0043B5CD /* JLSConfSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLSConfSpec.m; sourceTree = "<group>"; };
 		BE6766035E0ABB1BF9FBE305 /* Pods_Julius_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Julius_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -74,6 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97775F7E1B208BA5007D4C99 /* AVFoundation.framework in Frameworks */,
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
@@ -119,6 +151,7 @@
 		6003F58C195388D20070C39A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				97775F7D1B208BA5007D4C99 /* AVFoundation.framework */,
 				6003F58D195388D20070C39A /* Foundation.framework */,
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
@@ -138,6 +171,10 @@
 				6003F5A2195388D20070C39A /* Main_iPad.storyboard */,
 				6003F5A5195388D20070C39A /* JLSViewController.h */,
 				6003F5A6195388D20070C39A /* JLSViewController.m */,
+				9714385E1B21A046008FF40C /* JLSDetailViewController.h */,
+				9714385F1B21A046008FF40C /* JLSDetailViewController.m */,
+				97775F7F1B208E38007D4C99 /* Helper.h */,
+				97775F801B208E38007D4C99 /* Helper.m */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
@@ -148,6 +185,9 @@
 		6003F594195388D20070C39A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				978627FB1B20858D00846438 /* fast.jconf */,
+				978627FC1B20858D00846438 /* light.jconf */,
+				978627FD1B20858D00846438 /* models */,
 				6003F595195388D20070C39A /* Julius-Info.plist */,
 				6003F596195388D20070C39A /* InfoPlist.strings */,
 				6003F599195388D20070C39A /* main.m */,
@@ -160,7 +200,12 @@
 			isa = PBXGroup;
 			children = (
 				6003F5BB195388D20070C39A /* Tests.m */,
+				97D683AC1B2073DB0043B5CD /* JLSConfSpec.m */,
+				978627F91B207C3400846438 /* JLSRecogSpec.m */,
+				978627F61B2077AD00846438 /* JLSRecogResultSpec.m */,
 				6003F5B6195388D20070C39A /* Supporting Files */,
+				978627F31B20757000846438 /* SpecHelper.m */,
+				978627F51B20759600846438 /* SpecHelper.h */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -194,6 +239,35 @@
 				6A4D82D04B179E2F14BC316A /* Pods-Julius_Tests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		978627FD1B20858D00846438 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				978627FE1B20858D00846438 /* lang_m */,
+				978628011B20858D00846438 /* phone_m */,
+			);
+			name = models;
+			path = ../../Pod/Assets/models;
+			sourceTree = "<group>";
+		};
+		978627FE1B20858D00846438 /* lang_m */ = {
+			isa = PBXGroup;
+			children = (
+				978627FF1B20858D00846438 /* web.60k.8-8.bingramv4.gz */,
+				978628001B20858D00846438 /* web.60k.htkdic */,
+			);
+			path = lang_m;
+			sourceTree = "<group>";
+		};
+		978628011B20858D00846438 /* phone_m */ = {
+			isa = PBXGroup;
+			children = (
+				978628021B20858D00846438 /* hmmdefs_monof_mix16_gid.binhmm */,
+				978628031B20858D00846438 /* hmmdefs_ptm_gid.binhmm */,
+				978628041B20858D00846438 /* logicalTri */,
+			);
+			path = phone_m;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,9 +353,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9786280A1B20858D00846438 /* hmmdefs_ptm_gid.binhmm in Resources */,
+				978628081B20858D00846438 /* web.60k.htkdic in Resources */,
 				6003F5A4195388D20070C39A /* Main_iPad.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
+				978628071B20858D00846438 /* web.60k.8-8.bingramv4.gz in Resources */,
+				978628051B20858D00846438 /* fast.jconf in Resources */,
+				978628061B20858D00846438 /* light.jconf in Resources */,
 				6003F5A1195388D20070C39A /* Main_iPhone.storyboard in Resources */,
+				9786280B1B20858D00846438 /* logicalTri in Resources */,
+				978628091B20858D00846438 /* hmmdefs_monof_mix16_gid.binhmm in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -394,9 +475,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				971438601B21A046008FF40C /* JLSDetailViewController.m in Sources */,
 				6003F59E195388D20070C39A /* JLSAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* JLSViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				97775F811B208E38007D4C99 /* Helper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +488,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F5BC195388D20070C39A /* Tests.m in Sources */,
+				978627F41B20757000846438 /* SpecHelper.m in Sources */,
+				978627F71B2077AD00846438 /* JLSRecogResultSpec.m in Sources */,
+				97D683AD1B2073DB0043B5CD /* JLSConfSpec.m in Sources */,
+				978627FA1B207C3400846438 /* JLSRecogSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
