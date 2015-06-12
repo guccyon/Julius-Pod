@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
                        * Don't worry about the indent, we strip it!
                        DESC
   s.homepage         = "https://github.com/guccyon/Julius-Pod"
-  s.license          = 'MIT'
+  s.license          = { file: "julius-#{s.version}/LICENSE.utf8.txt" }
   s.author           = { "Tetsuro Higuchi" => "higuchi.tetsuro[at]gmail.com" }
   s.source           = { :git => "https://github.com/guccyon/Julius-Pod.git", :tag => s.version.to_s }
 
