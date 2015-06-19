@@ -6,6 +6,7 @@
 //
 //
 
+#import "JLSConf.h"
 #import <julius/julius.h>
 
 @interface JLSConf(Private)

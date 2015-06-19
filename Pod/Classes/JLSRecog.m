@@ -102,12 +102,12 @@ void JLSRecognitionResultListener(Recog *recog, void *data);
 }
 
 - (void) dealloc {
-    [JLSRecog recogFree:_recog];
+//    [JLSRecog recogFree:_recog];
 }
 
 #pragma mark - Public Methods
 - (void) printInfo {
-    [JLSRecog recogInfo:_recog];
+//    [JLSRecog recogInfo:_recog];
 }
 
 - (JLSState) recognizeWithPath:(NSString *)path {

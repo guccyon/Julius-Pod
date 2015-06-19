@@ -8,9 +8,6 @@
 
 #import "JLSJulius.h"
 
-#import "JLSRecog.h"
-#import <julius/jfunc.h>
-
 @interface JLSJulius()<JLSRecogDelegate> {
     JLSRecog *_recog;
 }

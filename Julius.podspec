@@ -24,6 +24,8 @@ Pod::Spec.new do |s|
     sh configure-ios.sh
   CMD
 
+  s.private_header_files = 'Pod/Classes/**/*.h'
+
   s.subspec 'libsent' do |sub|
     source_root = "julius-#{s.version}/libsent"
 
@@ -35,7 +37,6 @@ Pod::Spec.new do |s|
     exclude_adin_files << "#{source_root}/src/adin/pa"
 
     sub.source_files  = "#{source_root}/{src,include}/**/*.{h,c}"
-
     sub.exclude_files = exclude_adin_files
     sub.header_mappings_dir = "#{source_root}/include"
     sub.libraries     = 'z'
@@ -44,14 +45,16 @@ Pod::Spec.new do |s|
   s.subspec 'libjulius' do |sub|
     source_root = "julius-#{s.version}/libjulius"
 
-    sub.source_files = "#{source_root}/{src,include}/**/*.{h,c}"
-
+    sub.source_files  = "#{source_root}/{src,include}/**/*.{h,c}"
+    sub.exclude_files = "#{source_root}/include/**/acconfig.h"
     sub.header_mappings_dir  = "#{source_root}/include"
-    sub.xcconfig = {
-      'HEADER_SEARCH_PATHS' => '"$(PODS_ROOT)/Headers/Private/Julius"'
-    }
     sub.dependency 'Julius/libsent'
   end
+
+  s.xcconfig = {
+    'USER_HEADER_SEARCH_PATHS' => '"$(PODS_ROOT)/Headers/Private/Julius"',
+    'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES'
+  }
 
   s.resource_bundles = {
     'Julius' => [

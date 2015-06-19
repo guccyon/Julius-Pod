@@ -9,7 +9,7 @@
 #import "JLSDetailViewController.h"
 #import <AVFoundation/AVFoundation.h>
 #import "Helper.h"
-#import "JLSRecog.h"
+#import <Julius/JLSJulius.h>
 
 @interface JLSDetailViewController ()<JLSRecogDelegate> {
     AVAudioPlayer *player;

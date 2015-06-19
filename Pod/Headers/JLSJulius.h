@@ -7,8 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <julius/julius.h>
 
-#import "JLSRecogResult.h"
+#import "JLSConstants.h"
+#import "JLSRecog.h"
 
 typedef void (^JLSRecognizeCompletion)(JLSRecogResult *result, NSError *error);
 
